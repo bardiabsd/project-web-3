@@ -22,7 +22,7 @@ body {
 .header{
     height: 67px;
     width: 100%;
-background-color: rgb(8, 3, 61);
+background-color: rgb(14, 27, 54);
 display: flex;
 font-size: 15px;
     position: fixed;
@@ -315,7 +315,7 @@ background-color: rgb(8, 3, 61);
 }
 
 .fixtures-container {
-    background-color: #00042b;
+    background-color: rgb(2, 13, 43);
     padding: 40px;
     margin-top: -10px;
     overflow: hidden;
@@ -723,4 +723,216 @@ font-size: 14px;
     font-weight: 900;
     text-align: center;
     margin-top: 30px;
+}
+.red-blue-header {
+    margin-left: 50px;
+    margin-top: 100px;
+}
+.red-blue-section {
+    width: 100%;
+    height: 600px;
+    display: flex;
+
+}
+.left-red-blue {
+        gap: 20px;
+    display: flex;
+    width: 70%;
+    height: 100%;
+}
+.right-red-blue {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.first-left-redblue {
+ clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
+    margin-left: 30px;
+    width: 45%;
+    height: 100%;
+
+    background-image: url(images/PSGForCommunities-Discover_bkycgk.avif);
+    background-size: 105%;
+
+}
+.second-left-redblue {
+
+        background-image: url(images/Campus-Discover_orlult.avif);
+        background-size: 105%;
+clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
+    width: 45%;
+
+}
+
+.first-right-redblue {
+clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
+    background-image: url(images/BTS_20250402_018_u3ngdx.avif);
+    background-size: 150%;
+    width: 100%;
+    height: 49%;
+    margin-bottom: 15px;
+
+}
+
+.second-right-redblue {
+    background-image: url(images/Nouvelle-photo_dqc9wx.avif);
+    background-size: 120%;
+clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
+    width: 101%;
+    height: 49%;
+
+}
+.red-blue-overlay {
+    width: 100%;
+
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, .85),
+            rgba(0, 0, 0, .25));
+    opacity: 0;
+    transition: .4s ease;
+
+}
+.red-blue-content {
+    color: white;
+    margin-left: 25px;
+    
+}
+.first-left-redblue {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.red-blue-content {
+    position: absolute;
+    bottom: 40px;
+    left: 25px;
+    color: white;
+    z-index: 2;
+}
+.red-blue-content h1 {
+        transition: .5s all ease;
+    position: absolute;
+        bottom: 1px !important;
+            left: 1px !important;
+
+                    font-style: italic;
+}
+
+.red-blue-content p,
+.red-blue-content span {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .4s ease;
+    margin: 20px;
+}
+.red-blue-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(to top,
+            rgba(6, 1, 58, 0.85),
+            rgba(0, 0, 0, 0.45),
+            transparent);
+
+    opacity: .6;
+    transition: .4s;
+}
+.first-left-redblue:hover .red-blue-overlay {
+    opacity: 1;
+}
+
+.first-left-redblue:hover .red-blue-content h1 {
+    transform: translateY(-150px);
+
+}
+
+.first-left-redblue:hover .red-blue-content p,
+.first-left-redblue:hover .red-blue-content span {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.second-left-redblue:hover .red-blue-overlay {
+    opacity: 1;
+}
+
+.second-left-redblue:hover .red-blue-content h1 {
+    transform: translateY(-180px);
+
+}
+
+.second-left-redblue:hover .red-blue-content p,
+.second-left-redblue:hover .red-blue-content span {
+    opacity: 1;
+    transform: translateY(0);
+}
+.second-left-redblue {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.second-left-redblue p, .first-left-redblue {
+    font-size: 14px;
+}
+
+
+
+
+.first-right-redblue:hover .red-blue-overlay {
+    opacity: 1;
+}
+
+.first-right-redblue:hover .red-blue-content h1 {
+    transform: translateY(-110px);
+
+}
+
+.first-right-redblue:hover .red-blue-content p,
+.first-right-redblue:hover .red-blue-content span {
+    opacity: 1;
+    transform: translateY(0);
+}
+.first-right-redblue {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.first-right-redblue p,
+.first-right-redblue {
+    font-size: 14px;
+}
+
+
+
+
+
+.second-right-redblue:hover .red-blue-overlay {
+    opacity: 1;
+}
+
+.second-right-redblue:hover .red-blue-content h1 {
+    transform: translateY(-90px);
+
+}
+
+.second-right-redblue:hover .red-blue-content p,
+.second-right-redblue:hover .red-blue-content span {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.second-right-redblue {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.second-right-redblue p,
+.second-right-redblue {
+    font-size: 14px;
 }

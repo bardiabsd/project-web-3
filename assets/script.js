@@ -8,6 +8,7 @@ const languageSelector = document.querySelector(".language-selector");
 const dropdown = document.querySelector(".dropdown");
 const langBtn = document.querySelector(".lang-btn");
 const alertbtn = document.querySelectorAll (".alertbtn")
+const screen  = document.querySelectorAll ("html")
 
 // Language Dropdown
 langBtn.addEventListener("click", (e) => {
@@ -238,3 +239,6 @@ videocardSection.addEventListener("scroll", () => {
 
 });
 
+Screen.addEventListener("load", (e) =>{
+    alert ("dfsdfsf")
+})

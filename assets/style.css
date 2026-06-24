@@ -975,3 +975,110 @@ margin-bottom:20px ;
     font-style: normal;
     font-size: 14px;
 }
+
+.sponsors-section {
+    margin-top: 150px !important;
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+}
+.parent>div {
+
+            display: flex;
+                justify-content: center;
+                align-items: center;
+}
+.parent {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    
+}
+/* in ghesmat baraye grid hastesh*/
+.div1 {
+    
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+}
+
+.div2 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+}
+
+.div3 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+}
+
+.div4 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+}
+
+.div5 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+}
+
+.div6 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+}
+
+.div8 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+}
+
+.div9 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 6;
+}
+
+.div10 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 6;
+}
+
+.div11 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 6;
+}
+
+.div12 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 6;
+}
+
+.div13 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 6;
+}
+
+.div14 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 8;
+}
+
+.div15 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 8;
+}
+
+.sponsors-section img {
+    width: 50%;
+    transition: all ease .4s;
+    height: 50%;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+.parent img:hover {
+    scale: 1.19;
+    cursor: pointer;
+}

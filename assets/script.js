@@ -239,6 +239,3 @@ videocardSection.addEventListener("scroll", () => {
 
 });
 
-Screen.addEventListener("load", (e) =>{
-    alert ("dfsdfsf")
-})

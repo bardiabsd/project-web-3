@@ -732,7 +732,7 @@ font-size: 14px;
     width: 100%;
     height: 600px;
     display: flex;
-
+    margin-bottom: 200px;
 }
 .left-red-blue {
         gap: 20px;
@@ -753,7 +753,6 @@ font-size: 14px;
 
     background-image: url(images/PSGForCommunities-Discover_bkycgk.avif);
     background-size: 105%;
-
 }
 .second-left-redblue {
 
@@ -771,7 +770,6 @@ clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
     width: 100%;
     height: 49%;
     margin-bottom: 15px;
-
 }
 
 .second-right-redblue {
@@ -792,12 +790,10 @@ clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
             rgba(0, 0, 0, .25));
     opacity: 0;
     transition: .4s ease;
-
 }
 .red-blue-content {
     color: white;
     margin-left: 25px;
-    
 }
 .first-left-redblue {
     position: relative;
@@ -879,9 +875,6 @@ clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
     font-size: 14px;
 }
 
-
-
-
 .first-right-redblue:hover .red-blue-overlay {
     opacity: 1;
 }
@@ -907,10 +900,6 @@ clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
     font-size: 14px;
 }
 
-
-
-
-
 .second-right-redblue:hover .red-blue-overlay {
     opacity: 1;
 }
@@ -934,5 +923,55 @@ clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
 
 .second-right-redblue p,
 .second-right-redblue {
+    font-size: 14px;
+}
+
+.playzone-banner {
+position: relative;
+    width: 1000px;
+    margin: auto;
+    height: 390px;
+    background-image: url("images/Background_image_rceywy.avif");
+    background-size: 120%;
+}
+
+.playzone-banner img {
+    position: absolute;
+    width: 450px;
+    height: 350px;
+bottom: 0px;
+    right: 50px;
+}
+.playzone-caption {
+    padding-top: 150px;
+margin-left: 60px;
+font-style: italic;
+    color: #fff;
+
+}
+.playzone-caption button {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+margin-top: 20px;
+    font-weight: 900;
+    font-style: italic;
+    
+}
+.playzone-caption h2 {
+font-size: 30px;
+
+font-weight: 900;
+margin-bottom:20px ;
+
+}
+.playzone-caption button a {
+    color: #fff;
+}
+.playzone-caption p {
+    font-weight: 300;
+    font-style: normal;
     font-size: 14px;
 }

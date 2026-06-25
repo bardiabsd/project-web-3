@@ -1,0 +1,437 @@
+
+/* ==========================
+GLOBAL FIXES
+========================== */
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.body-container {
+    overflow-x: hidden;
+}
+
+/* ==========================
+TABLET
+========================== */
+
+@media (max-width:1024px) {
+
+    .header-ul {
+        display: none;
+    }
+
+    .left-header {
+        width: 100%;
+        align-items: center;
+    }
+
+    .right-header {
+        width: auto;
+        margin-left: auto;
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+
+    /* NEWS */
+
+    .newssection {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .news-left-side,
+    .news-right-side {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-news {
+        width: 95%;
+        height: 500px;
+        position: relative;
+        margin: auto;
+    }
+
+    .news-right-side {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .news-cards {
+        width: 100%;
+        height: auto;
+    }
+
+    /* RED BLUE */
+
+    .red-blue-section {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .left-red-blue,
+    .right-red-blue {
+        width: 100%;
+    }
+
+    /* PLAYZONE */
+
+    .playzone-banner {
+        width: 95%;
+    }
+}
+
+/* ==========================
+MOBILE
+========================== */
+
+@media (max-width:768px) {
+
+    /* HEADER */
+
+    .header {
+        height: 70px;
+    }
+
+    .header-banner,
+    .header-banner img {
+        height: 65px;
+    }
+
+    .header-ul {
+        display: none;
+    }
+
+    .left-header {
+        width: 100%;
+        align-items: center;
+    }
+
+    .right-header {
+        width: auto;
+        margin-left: auto;
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+
+    .site-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    /* NAV */
+
+    .headernav p {
+        display: none;
+    }
+
+    #firstnav {
+        width: 150px;
+        height: 100vh;
+    }
+        #secondnav {
+                    width: 154px;
+                            height: 100vh;
+        }
+    #firstnav ul,
+    #secondnav ul {
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+                #secondnav li{
+                    margin-left: 15px;
+                }
+.teamsbtn {
+    margin-left: 30px !important;
+}
+    #firstnav li,
+    #secondnav li {
+        padding: 12px 0;
+    }
+
+    .secondnavmenu {
+        left:120px !important;
+    }
+
+    /* MAIN BANNER */
+
+    .main-banner a {
+        left: 20px;
+        bottom: 60px;
+        font-size: 16px;
+    }
+
+    .main-banner h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    /* FIXTURES */
+
+    .fixtures-header {
+        text-align: center;
+        margin: 0 auto 35px;
+    }
+
+    /* NEWS */
+
+    .newssection {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .news-left-side {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .main-news {
+        width: 100%;
+        height: 350px;
+        margin: 0;
+    }
+
+    .main-news-topic {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        margin: 0;
+    }
+
+    .main-news-topic p {
+        font-size: 20px;
+        line-height: 1.4;
+        margin: 10px 0;
+    }
+
+    .news-right-side {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .news-cards {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-card-img {
+        height: 140px;
+    }
+
+    .news-caption p {
+        font-size: 13px;
+    }
+
+    /* VIDEO */
+
+    .video-header {
+        display: block;
+        text-align: center;
+        margin: 0 !important;
+    }
+
+    /* RED & BLUE */
+
+    .red-blue-section {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .left-red-blue {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .right-red-blue {
+        width: 100%;
+    }
+
+    .first-left-redblue,
+    .second-left-redblue,
+    .first-right-redblue,
+    .second-right-redblue {
+        width: 95%;
+        height: 300px;
+        margin: auto;
+    }
+
+    .red-blue-content h1 {
+        font-size: 24px;
+    }
+
+    .red-blue-content p {
+        font-size: 12px;
+    }
+
+    /* PLAYZONE */
+
+    .playzone-banner {
+        width: 100%;
+        min-height: 650px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        padding: 40px 20px;
+        position: relative;
+    }
+
+    .playzone-caption {
+        order: 1;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        z-index: 2;
+    }
+
+    .playzone-caption h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .playzone-caption p {
+        font-size: 14px;
+    }
+
+    .playzone-caption button {
+        margin-top: 20px;
+    }
+
+    .playzone-banner img {
+        position: absolute;
+
+        bottom: 0;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: 95%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    /* SPONSORS */
+
+    .parent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+    }
+
+    .parent>div {
+        width: 120px;
+        height: 70px;
+    }
+
+    .sponsors-section {
+        height: auto;
+    }
+
+    .sponsors-section img {
+        width: 80%;
+        height: auto;
+    }
+
+    /* FOOTER */
+
+    footer {
+        height: auto;
+    }
+        .main-footer ul {
+width: 33.33%;
+            height: auto;
+        }
+    .main-footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .main-footer img {
+        margin-top: 30px;
+        width: 110px;
+        height: auto;
+    }
+
+    .footer-logo {
+        width: 90px;
+        height: 90px !important;
+    }
+
+    .bottom-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-footer img {
+        width: 220px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .mid-img {
+        width: 120px !important;
+    }
+
+}
+
+/* ==========================
+VERY SMALL PHONES
+========================== */
+
+@media (max-width:480px) {
+
+    .main-banner h1 {
+        font-size: 22px;
+    }
+
+    .main-banner a {
+        font-size: 14px;
+    }
+
+    .main-news {
+        height: 300px;
+    }
+
+    .main-news-topic p {
+        font-size: 18px;
+    }
+
+    .news-right-side {
+        grid-template-columns: 1fr;
+    }
+
+    .playzone-caption h2 {
+        font-size: 24px;
+    }
+
+    .playzone-banner {
+        min-height: 550px;
+    }
+}

@@ -240,8 +240,3 @@ videocardSection.addEventListener("scroll", () => {
 
 });
 
-window.addEventListener("scroll", () => {
-window.scrollY > 1
-        header.classList.add(".header-scroll-animation");
-
-});

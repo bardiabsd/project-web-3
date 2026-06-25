@@ -9,6 +9,7 @@ const dropdown = document.querySelector(".dropdown");
 const langBtn = document.querySelector(".lang-btn");
 const alertbtn = document.querySelectorAll (".alertbtn")
 const screen  = document.querySelectorAll ("html")
+const header = document.getElementsByClassName(".header")
 
 // Language Dropdown
 langBtn.addEventListener("click", (e) => {
@@ -239,3 +240,8 @@ videocardSection.addEventListener("scroll", () => {
 
 });
 
+window.addEventListener("scroll", () => {
+window.scrollY > 1
+        header.classList.add(".header-scroll-animation");
+
+});
